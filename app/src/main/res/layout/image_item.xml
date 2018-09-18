@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view_upload"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_view_upload"
+            android:layout_toRightOf="@+id/image_view_upload"
+            android:text="Name"
+            android:fontFamily="sans-serif"
+            android:textColor="#121ef5"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/AgeText"
+            android:layout_toRightOf="@+id/AgeText"
+            android:layout_below="@+id/text_view_name"
+            android:id="@+id/Age"
+            android:textSize="16dp"
+            android:textColor="#121ef5"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experence:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:id="@+id/AgeText"
+            android:layout_toEndOf="@+id/image_view_upload"
+            android:layout_toRightOf="@+id/image_view_upload"
+            android:layout_below="@+id/text_view_name"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_name"
+        android:layout_toEndOf="@+id/Age"
+            android:layout_toRightOf="@+id/Age"
+            android:text="spl In:"
+            android:id="@+id/HeightText"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Height"
+            android:textSize="16dp"
+            android:textColor="#121ef5"
+            android:layout_toEndOf="@+id/HeightText"
+            android:layout_toRightOf="@+id/HeightText"
+            android:layout_below="@+id/text_view_name"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/call"
+            android:id="@+id/call"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

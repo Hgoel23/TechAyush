@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:id="@+id/NameField"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyEditText1"
+            android:textColorHint="@color/white"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile number"
+                android:fontFamily="serif"
+                android:inputType="number"
+                android:id="@+id/Name"
+                android:textColor="@color/white"
+                android:theme="@style/MyEditText1" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:id="@+id/EnterEmailField"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyEditText1"
+            android:textColorHint="@color/white"
+            android:layout_below="@+id/NameField"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:fontFamily="serif"
+                android:inputType="textEmailAddress"
+                android:id="@+id/editTextEmail"
+                android:textColor="@color/white"
+                android:theme="@style/MyEditText1" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_below="@+id/EnterEmailField"
+            android:id="@+id/EnterPasswordField"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyEditText1"
+            android:textColorHint="@color/white"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/editTextPassword"
+                android:textColor="@color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:id="@+id/EnterConformPassword"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyEditText1"
+            android:textColorHint="@color/white"
+            android:layout_below="@+id/EnterPasswordField"
+            android:layout_alignLeft="@+id/EnterPasswordField"
+            android:layout_alignStart="@+id/EnterPasswordField">
+
+            <EditText
+                android:id="@+id/conformPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Conform Password"
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:id="@+id/EnterName"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyEditText1"
+            android:textColorHint="@color/white"
+            android:layout_below="@+id/EnterConformPassword"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:fontFamily="serif"
+                android:inputType="textEmailAddress"
+                android:id="@+id/editTextName"
+                android:textColor="@color/white"
+                android:theme="@style/MyEditText1" />
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitinreg"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/EnterName"
+            android:layout_alignStart="@+id/EnterName"
+            android:textColor="@color/white"
+            android:layout_below="@+id/EnterName"
+            android:background="@drawable/background_signup"/>
+
+    </RelativeLayout>
+</RelativeLayout>

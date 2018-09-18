@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "400866255769",
+    "firebase_url": "https://docters-1b2aa.firebaseio.com",
+    "project_id": "docters-1b2aa",
+    "storage_bucket": "docters-1b2aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400866255769:android:bff28696b837e9cc",
+        "android_client_info": {
+          "package_name": "com.example.kalya.harsh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400866255769-o546rvr204o6e5a4e0dlfrj0nrsho422.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kalya.harsh",
+            "certificate_hash": "b5cf1e32632af325d46ba1c9a274f297e7336e09"
+          }
+        },
+        {
+          "client_id": "400866255769-qfs9ajk2n50stjpgg8nrnb0216p9n25a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAroEvtSjSYEjtbh8wOaFYFSMt5-a-Sggw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400866255769-qfs9ajk2n50stjpgg8nrnb0216p9n25a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

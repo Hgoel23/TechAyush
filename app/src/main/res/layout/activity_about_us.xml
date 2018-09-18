@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Tech AYUSH"
+        android:id="@+id/TechAyush"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TechAyush"
+        android:id="@+id/Address"
+        android:layout_marginTop="10dp"
+        android:text="            3-5-45
+Vishali Appartments
+Hyderabad(500 003)
+        Telanagana"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/Address"
+        android:id="@+id/relativeLayout"
+        android:background="#EEEDEF"></RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/textDesigner"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:text="Application Designer"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textDesigner"
+        android:text="+91-961 895 1286"
+        android:id="@+id/number"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/call"
+        android:id="@+id/call"/>
+
+
+</RelativeLayout>

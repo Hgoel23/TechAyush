@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KnowDiseases">
+
+    <TextView
+        android:id="@+id/RelationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Relationship with patient"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/MySelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelationText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_signup"
+        android:text="MySelf" />
+
+    <Button
+        android:id="@+id/Wife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/MySelf"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/RelationText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_signup"
+        android:text="Wife" />
+    <Button
+        android:id="@+id/Father"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Wife"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/RelationText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_signup"
+        android:text="Father" />
+    <Button
+        android:id="@+id/Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Father"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/RelationText"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_signup"
+        android:text="Other" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age of patient"
+        android:layout_below="@+id/Other"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:id="@+id/Ageofpatienttext"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="50dp"
+        android:hint="AGE"
+        android:inputType="number"
+        android:layout_alignStart="@+id/Ageofpatienttext"
+        android:layout_alignLeft="@+id/Ageofpatienttext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/agefield"
+        android:layout_below="@+id/Ageofpatienttext"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:id="@+id/gendertext"
+        android:textSize="18dp"
+        android:layout_below="@+id/agefield"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@+id/Ageofpatienttext"
+        android:layout_alignLeft="@+id/Ageofpatienttext"/>
+    <RadioGroup
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/gendertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="16sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Health Corner"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/Enterhealthtext"
+        android:textSize="18dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Please type your health issue in detail."
+        android:layout_marginRight="20dp"
+        android:id="@+id/healthissuebox"
+        android:layout_below="@+id/Enterhealthtext"/>
+    <RelativeLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/ok"
+        android:layout_below="@+id/healthissuebox"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tick"/>
+    </RelativeLayout>
+</RelativeLayout>
